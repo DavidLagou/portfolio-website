@@ -246,7 +246,6 @@ nav {
     .nav-links {
         position: fixed;
         background: #17191D;
-
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -498,10 +497,12 @@ nav {
     background: url(../img/Trivia-Header.jpg)0 0;
     background-size: cover;
 }
+
 .project_imgheader.groupeton {
     background: url(../img/groupeton_header.jpg)0 0;
     background-size: cover;
 }
+
 .project_imgheader.ysoa {
     background: url(../img/ysoa_header.jpg)0 0;
     background-size: cover;
@@ -578,13 +579,15 @@ nav {
     padding: 14px;
     border: 3px solid #127064;
     text-align: center;
+    background-color: #127064;
+    color: #ffffff;
 }
 
 .projectPageDetails h3 {
     font-family: 'Rubik', sans-serif;
     font-size: 1.9em;
     font-weight: 600;
-    color: hsl(0, 0%, 19%);
+    color: hsl(0, 0%, 100%);
     text-transform: uppercase;
     padding-bottom: 20px;
 }
@@ -592,8 +595,9 @@ nav {
 .projectInfoP {
     width: 90%;
 }
-.boldTxt{
-    margin:10px 0px ;
+
+.boldTxt {
+    margin: 10px 0px;
     font-weight: 600px;
     font-family: 'Rubik', sans-serif;
     background-color: #127064;
@@ -601,9 +605,11 @@ nav {
     padding: 10px;
     font-size: 18px;
 }
-.boldTxt a{
-   color: white;
+
+.boldTxt a {
+    color: white;
 }
+
 .projectImg.process img {
     width: 600px;
 }
@@ -624,7 +630,7 @@ nav {
     margin: 10px auto;
 }
 
-.reduce{
+.reduce {
     padding: 100px;
 }
 
@@ -649,10 +655,51 @@ nav {
     font-size: 1.3em;
 }
 
+.painPointsList {
+    list-style-type: circle;
+    margin-top: 10px;
+}
+
+.painPointsList li {
+    padding: 10px 0;
+    border-bottom: 2px solid #1abc9c;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Task Analysis Table */
+
+.taskAnalysisTable {
+    text-align: left;
+    overflow: hidden;
+    /* width: 80%; */
+    margin: 0 auto;
+    display: table;
+    border: 3px solid #127064;
+}
+
+.taskAnalysisTable td, .taskAnalysisTable th {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.taskAnalysisTable thead {
+    background-color: #127064;
+    color: white;
+}
+
+.selectedTask {
+    /* background-color: #127064; */
+}
+
 /* Footer info CSS */
-.footerInfo{
+
+.footerInfo {
     /* padding: 20px; */
 }
+
 .footerInfo h2 {
     padding: 33px 0px 15px 0px;
     font-size: 1.9em;
@@ -850,9 +897,20 @@ MEDIA QUERIES
         padding: 12px;
         background-size: 200% 100%;
     }
+    .taskAnalysisTable {
+        text-align: left;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        display: table;
+        border: 3px solid #127064;
+    }
+    .taskAnalysisTable td, .taskAnalysisTable th {
+        padding: 2px;
+    }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 321px) {
     h1 {
         font-size: 20px;
     }
@@ -866,13 +924,13 @@ MEDIA QUERIES
         grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
         margin: 0px;
     }
-   
     .buttonCTA {
         font-size: 0.9em;
     }
-    
+    .taskAnalysisTable td, .taskAnalysisTable th {
+        padding: 2px;
+    }
     /* html{
         overflow-x: hidden;
     } */
-
 }
