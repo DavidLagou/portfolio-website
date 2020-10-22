@@ -418,6 +418,10 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
 }
+.projectImg.solar {
+    width: 70%;
+
+}
 
 
 .mockupTxt {
@@ -836,6 +840,11 @@ MEDIA QUERIES
         width: 500px;
         /* margin: 0px auto; */
     }
+    .projectImg.solar {
+        width: 100%;
+        padding: 40px;
+    
+    }
     .projectImg.process {
         margin: 0px auto;
     }
@@ -960,7 +969,7 @@ MEDIA QUERIES
     .taskAnalysisTable td, .taskAnalysisTable th {
         padding: 2px;
     }
-    /* html{
+    html{
         overflow-x: hidden;
-    } */
+    }
 }
