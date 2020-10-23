@@ -246,7 +246,6 @@ nav {
     .nav-links {
         position: fixed;
         background: #17191D;
-
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -394,6 +393,9 @@ nav {
 .projectTools {
     padding-top: 20px;
 }
+.imageAnimate:hover{
+    opacity: 0.6;
+}
 
 .projectTools ul li {
     padding: 10px 0px 10px 5px;
@@ -416,6 +418,11 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
 }
+.projectImg.solar {
+    width: 70%;
+
+}
+
 
 .mockupTxt {
     text-align: center;
@@ -498,15 +505,33 @@ nav {
     background: url(../img/Trivia-Header.jpg)0 0;
     background-size: cover;
 }
+
 .project_imgheader.groupeton {
     background: url(../img/groupeton_header.jpg)0 0;
     background-size: cover;
 }
+
 .project_imgheader.ysoa {
     background: url(../img/ysoa_header.jpg)0 0;
     background-size: cover;
 }
-
+#top{
+    position: fixed;
+    bottom: 20px;
+    right: 3px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #127064;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4px;
+}
+#top:hover {
+    background-color: #555;
+  }
 .headertxt {
     position: relative;
     top: 40%;
@@ -529,28 +554,43 @@ nav {
     padding-bottom: 10px;
     font-size: 1.8em;
 }
+.cards h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+    font-size: 1.5em;
+    padding-top: 25px;
+    margin-left: 5px;
+}
+.cards p{
+    padding-top: 10px;
+    color: rgb(43, 43, 43);
+    font-size: 0.9em;
+    margin-left: 5px;
+}
 
+.cardImage{
+    text-align: center;
+}
+.cardImage img{
+    max-width:100%;
+    object-fit: cover;
+}
 .projectsContainer {
-    padding: 20px;
+    /* padding: 20px; */
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 2rem;
 }
 
-.imgcontainer h2 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    color: rgb(31, 31, 31);
-    font-size: 1.5em;
-    padding-top: 25px;
-}
 
 .techTools {
     font-size: 0.8em;
     color: #127064;
     font-weight: 600;
     padding-top: 9px;
+    margin-left: 5px;
 }
 
 .imgcontainer p {
@@ -578,13 +618,24 @@ nav {
     padding: 14px;
     border: 3px solid #127064;
     text-align: center;
+    background-color: #127064;
+    color: #ffffff;
+}
+
+
+.projectPageDetails.process {
+    background-color: #ffffff;
+    color: #127064;
+}
+.projectPageDetails.process h3 {
+    color: #127064;
 }
 
 .projectPageDetails h3 {
     font-family: 'Rubik', sans-serif;
     font-size: 1.9em;
     font-weight: 600;
-    color: hsl(0, 0%, 19%);
+    color: hsl(0, 0%, 100%);
     text-transform: uppercase;
     padding-bottom: 20px;
 }
@@ -592,8 +643,9 @@ nav {
 .projectInfoP {
     width: 90%;
 }
-.boldTxt{
-    margin:10px 0px ;
+
+.boldTxt {
+    margin: 10px 0px;
     font-weight: 600px;
     font-family: 'Rubik', sans-serif;
     background-color: #127064;
@@ -601,11 +653,14 @@ nav {
     padding: 10px;
     font-size: 18px;
 }
-.boldTxt a{
-   color: white;
+
+.boldTxt a {
+    color: white;
 }
+
 .projectImg.process img {
-    width: 600px;
+    width: 650px;
+    box-shadow: none;
 }
 
 .projectCat {
@@ -622,9 +677,10 @@ nav {
     flex-direction: row;
     justify-content: center;
     margin: 10px auto;
+    padding: 10px;
 }
 
-.reduce{
+.reduce {
     padding: 100px;
 }
 
@@ -649,10 +705,51 @@ nav {
     font-size: 1.3em;
 }
 
+.painPointsList {
+    list-style-type: circle;
+    margin-top: 10px;
+}
+
+.painPointsList li {
+    padding: 10px 0;
+    border-bottom: 2px solid #1abc9c;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Task Analysis Table */
+
+.taskAnalysisTable {
+    text-align: left;
+    overflow: hidden;
+    /* width: 80%; */
+    margin: 0 auto;
+    display: table;
+    border: 3px solid #127064;
+}
+
+.taskAnalysisTable td, .taskAnalysisTable th {
+    border: 1px solid #dddddd;
+    padding: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.taskAnalysisTable thead {
+    background-color: #127064;
+    color: white;
+}
+
+.selectedTask {
+    /* background-color: #127064; */
+}
+
 /* Footer info CSS */
-.footerInfo{
+
+.footerInfo {
     /* padding: 20px; */
 }
+
 .footerInfo h2 {
     padding: 33px 0px 15px 0px;
     font-size: 1.9em;
@@ -759,6 +856,11 @@ MEDIA QUERIES
         width: 500px;
         /* margin: 0px auto; */
     }
+    .projectImg.solar {
+        width: 100%;
+        padding: 10px;
+    
+    }
     .projectImg.process {
         margin: 0px auto;
     }
@@ -850,9 +952,20 @@ MEDIA QUERIES
         padding: 12px;
         background-size: 200% 100%;
     }
+    .taskAnalysisTable {
+        text-align: left;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        display: table;
+        border: 3px solid #127064;
+    }
+    .taskAnalysisTable td, .taskAnalysisTable th {
+        padding: 2px;
+    }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 321px) {
     h1 {
         font-size: 20px;
     }
@@ -863,16 +976,20 @@ MEDIA QUERIES
         font-size: 0.8em;
     }
     .projectsContainer {
-        grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         margin: 0px;
     }
-   
     .buttonCTA {
         font-size: 0.9em;
+    }
+    .taskAnalysisTable td, .taskAnalysisTable th {
+        padding: 2px;
+    }
+    #top{
+        display: none;
     }
     
     /* html{
         overflow-x: hidden;
     } */
-
 }
