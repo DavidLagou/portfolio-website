@@ -554,28 +554,43 @@ nav {
     padding-bottom: 10px;
     font-size: 1.8em;
 }
+.cards h2{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+    font-size: 1.5em;
+    padding-top: 25px;
+    margin-left: 5px;
+}
+.cards p{
+    padding-top: 10px;
+    color: rgb(43, 43, 43);
+    font-size: 0.9em;
+    margin-left: 5px;
+}
 
+.cardImage{
+    text-align: center;
+}
+.cardImage img{
+    max-width:100%;
+    object-fit: cover;
+}
 .projectsContainer {
-    padding: 20px;
+    /* padding: 20px; */
     margin: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-gap: 2rem;
 }
 
-.imgcontainer h2 {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    color: rgb(31, 31, 31);
-    font-size: 1.5em;
-    padding-top: 25px;
-}
 
 .techTools {
     font-size: 0.8em;
     color: #127064;
     font-weight: 600;
     padding-top: 9px;
+    margin-left: 5px;
 }
 
 .imgcontainer p {
@@ -662,6 +677,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     margin: 10px auto;
+    padding: 10px;
 }
 
 .reduce {
@@ -842,7 +858,7 @@ MEDIA QUERIES
     }
     .projectImg.solar {
         width: 100%;
-        padding: 40px;
+        padding: 10px;
     
     }
     .projectImg.process {
@@ -960,7 +976,7 @@ MEDIA QUERIES
         font-size: 0.8em;
     }
     .projectsContainer {
-        grid-template-columns: repeat(auto-fit, minmax(319px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         margin: 0px;
     }
     .buttonCTA {
@@ -969,7 +985,11 @@ MEDIA QUERIES
     .taskAnalysisTable td, .taskAnalysisTable th {
         padding: 2px;
     }
-    html{
-        overflow-x: hidden;
+    #top{
+        display: none;
     }
+    
+    /* html{
+        overflow-x: hidden;
+    } */
 }
