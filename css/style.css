@@ -100,6 +100,7 @@ nav a {
     font-size: 1.4em;
     font-family: 'Rubik', sans-serif;
     font-weight: 900;
+    overflow: hidden;
 }
 
 h1 {
@@ -327,7 +328,6 @@ nav {
 
 .homeFeatureTxt h2 {
     text-align: center;
-    /* color: #4088C5; */
     color: #005544;
 }
 
@@ -335,7 +335,6 @@ nav {
     display: flex;
     margin: 0px auto;
     max-width: 1200px;
-    /* justify-content: flex-end; */
     padding: 10px;
 }
 
@@ -365,6 +364,7 @@ nav {
     padding-bottom: 20px;
 }
 
+
 .projectCTA {
     margin-top: 50px;
     letter-spacing: 2px;
@@ -393,7 +393,9 @@ nav {
 .projectTools {
     padding-top: 20px;
 }
-.imageAnimate:hover{
+
+
+.imageAnimate:hover {
     opacity: 0.6;
 }
 
@@ -404,7 +406,9 @@ nav {
     font-size: 0.9em;
     letter-spacing: 2px;
 }
-
+.buttonContainer{
+    margin-top: 40px;
+}
 .projectTools img {
     height: 26px;
     padding-right: 9px;
@@ -413,16 +417,13 @@ nav {
 
 .projectImg img, .projectImg.two img {
     width: 100%;
-    /* max-width: 90%; */
-    /* height: auto; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
 }
+
 .projectImg.solar {
     width: 70%;
-
 }
-
 
 .mockupTxt {
     text-align: center;
@@ -515,7 +516,8 @@ nav {
     background: url(../img/ysoa_header.jpg)0 0;
     background-size: cover;
 }
-#top{
+
+#top {
     position: fixed;
     bottom: 20px;
     right: 3px;
@@ -529,9 +531,11 @@ nav {
     padding: 12px;
     border-radius: 4px;
 }
+
 #top:hover {
     background-color: #555;
-  }
+}
+
 .headertxt {
     position: relative;
     top: 40%;
@@ -554,28 +558,36 @@ nav {
     padding-bottom: 10px;
     font-size: 1.8em;
 }
-.cards h2{
+.cards{
+    padding: 10px;
+}
+
+.cards h2 {
     font-family: 'Rubik', sans-serif;
     font-weight: 600;
     color: rgb(31, 31, 31);
-    font-size: 1.5em;
+    font-size: 2.5em;
     padding-top: 25px;
     margin-left: 5px;
 }
-.cards p{
-    padding-top: 10px;
+
+.cards p {
+    padding:15px 0px;
     color: rgb(43, 43, 43);
-    font-size: 0.9em;
+    font-size: 1.2em;
     margin-left: 5px;
+
 }
 
-.cardImage{
+.cardImage {
     text-align: center;
 }
-.cardImage img{
-    max-width:100%;
+
+.cardImage img {
+    max-width: 100%;
     object-fit: cover;
 }
+
 .projectsContainer {
     /* padding: 20px; */
     margin: 20px;
@@ -584,9 +596,8 @@ nav {
     grid-gap: 2rem;
 }
 
-
 .techTools {
-    font-size: 0.8em;
+    font-size: 1.2em;
     color: #127064;
     font-weight: 600;
     padding-top: 9px;
@@ -622,11 +633,11 @@ nav {
     color: #ffffff;
 }
 
-
 .projectPageDetails.process {
     background-color: #ffffff;
     color: #127064;
 }
+
 .projectPageDetails.process h3 {
     color: #127064;
 }
@@ -673,7 +684,6 @@ nav {
 
 .solarMockup {
     display: flex;
-    /* width: 100%; */
     flex-direction: row;
     justify-content: center;
     margin: 10px auto;
@@ -686,8 +696,15 @@ nav {
 
 #skillSection {
     display: flex;
-    justify-content: space-around;
+    justify-content:space-evenly ;
     text-align: center;
+}
+#aboutEmail{
+    padding: 10px 0px;
+}
+h3#aboutEmail{
+    font-size: 1.5em;
+    font-weight: 900;
 }
 
 .headSkill {
@@ -723,7 +740,6 @@ nav {
 .taskAnalysisTable {
     text-align: left;
     overflow: hidden;
-    /* width: 80%; */
     margin: 0 auto;
     display: table;
     border: 3px solid #127064;
@@ -740,15 +756,6 @@ nav {
     color: white;
 }
 
-.selectedTask {
-    /* background-color: #127064; */
-}
-
-/* Footer info CSS */
-
-.footerInfo {
-    /* padding: 20px; */
-}
 
 .footerInfo h2 {
     padding: 33px 0px 15px 0px;
@@ -799,12 +806,6 @@ nav {
     justify-content: center;
 }
 
-/* .
-
-MEDIA QUERIES 
-
-*/
-
 /******** MEDIA QUEIRIESSSSS ******/
 
 @media only screen and (max-width: 1000px) {
@@ -844,26 +845,25 @@ MEDIA QUERIES
         flex-basis: 120px;
     }
     .projectInfo {
-        text-align: center;
         padding-bottom: 45px;
+        margin: 0px auto;
     }
+   
     .projectImg, .projectImg.two {
         width: 100%;
-        /* margin: 0px auto; */
         text-align: center;
     }
     .projectImg.process img {
         width: 500px;
-        /* margin: 0px auto; */
     }
     .projectImg.solar {
         width: 100%;
         padding: 10px;
-    
     }
     .projectImg.process {
         margin: 0px auto;
     }
+ 
     .projectInfoP {
         width: 100%;
     }
@@ -878,7 +878,6 @@ MEDIA QUERIES
         font-size: 1.6em;
     }
     .contactInfo {
-        /* flex-direction: column; */
         flex-basis: 150px;
     }
     .contactItem {
@@ -922,6 +921,9 @@ MEDIA QUERIES
         padding: 20px;
         width: 100%;
         margin: 10px auto;
+    }
+    .projectPageHeader {
+padding-left: 10px;       
     }
     .projectImg.process img {
         width: 300px;
@@ -967,7 +969,7 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 321px) {
     h1 {
-        font-size: 20px;
+        font-size: 33px;
     }
     h1::after {
         height: 4px;
@@ -985,11 +987,7 @@ MEDIA QUERIES
     .taskAnalysisTable td, .taskAnalysisTable th {
         padding: 2px;
     }
-    #top{
+    #top {
         display: none;
     }
-    
-    /* html{
-        overflow-x: hidden;
-    } */
-}
+  
