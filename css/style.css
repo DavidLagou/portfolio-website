@@ -558,9 +558,6 @@ nav {
     padding-bottom: 10px;
     font-size: 1.8em;
 }
-.cards{
-    padding: 10px;
-}
 
 .cards h2 {
     font-family: 'Rubik', sans-serif;
@@ -592,9 +589,47 @@ nav {
     /* padding: 20px; */
     margin: 20px;
     display: grid;
+    display: -ms-grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-rows: 4fr;
     grid-gap: 2rem;
 }
+.cards{
+    padding: 10px;
+}
+.cards.one{
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+}
+.cards.two{
+    -ms-grid-column: 2;
+    -ms-grid-row: 1;
+}
+.cards.three{
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+}
+.cards.four{
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
+}
+.cards.five{
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+}
+.cards.six{
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+}
+.cards.seven{
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+}
+
+
+
+
 
 .techTools {
     font-size: 1.2em;
@@ -657,7 +692,7 @@ nav {
 
 .boldTxt {
     margin: 10px 0px;
-    font-weight: 600px;
+    font-weight: 600;
     font-family: 'Rubik', sans-serif;
     background-color: #127064;
     color: #ffffff;
@@ -840,6 +875,11 @@ h3#aboutEmail{
         flex-direction: column;
         width: 600px;
         text-align: center;
+    }
+    .projectsContainer {
+        -ms-grid-columns: 1fr ;
+        -ms-grid-rows: 2fr;
+        grid-gap: 2rem;
     }
     .projectCat {
         flex-basis: 120px;
