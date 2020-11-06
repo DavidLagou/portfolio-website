@@ -364,7 +364,6 @@ nav {
     padding-bottom: 20px;
 }
 
-
 .projectCTA {
     margin-top: 50px;
     letter-spacing: 2px;
@@ -394,7 +393,6 @@ nav {
     padding-top: 20px;
 }
 
-
 .imageAnimate:hover {
     opacity: 0.6;
 }
@@ -406,9 +404,11 @@ nav {
     font-size: 0.9em;
     letter-spacing: 2px;
 }
-.buttonContainer{
+
+.buttonContainer {
     margin-top: 40px;
 }
+
 .projectTools img {
     height: 26px;
     padding-right: 9px;
@@ -434,7 +434,7 @@ nav {
 }
 
 .footerCTA {
-    margin-top: 100px;
+    margin-top: 200px;
     text-align: center;
 }
 
@@ -517,15 +517,18 @@ nav {
     background: url(../img/ysoa_header.jpg)0 0;
     background-size: cover;
 }
+
 .project_imgheader.groupeton_app {
     background: url(../img/groupeton_app_header.jpg)0 0;
     background-size: cover;
 }
-.groupetonGif{
+
+.groupetonGif {
     border: 3px solid #C75151;
     height: 500px;
     width: auto;
 }
+
 #top {
     position: fixed;
     bottom: 20px;
@@ -578,11 +581,10 @@ nav {
 }
 
 .cards p {
-    padding:15px 0px;
+    padding: 15px 0px;
     color: rgb(43, 43, 43);
     font-size: 1.2em;
     margin-left: 5px;
-
 }
 
 .cardImage {
@@ -604,41 +606,45 @@ nav {
     -ms-grid-rows: 4fr;
     grid-gap: 2rem;
 }
-.cards{
+
+.cards {
     padding: 10px;
 }
-.cards.one{
+
+.cards.one {
     -ms-grid-column: 1;
     -ms-grid-row: 1;
 }
-.cards.two{
+
+.cards.two {
     -ms-grid-column: 2;
     -ms-grid-row: 1;
 }
-.cards.three{
+
+.cards.three {
     -ms-grid-column: 1;
     -ms-grid-row: 2;
 }
-.cards.four{
+
+.cards.four {
     -ms-grid-column: 2;
     -ms-grid-row: 2;
 }
-.cards.five{
+
+.cards.five {
     -ms-grid-column: 1;
     -ms-grid-row: 3;
 }
-.cards.six{
+
+.cards.six {
     -ms-grid-column: 2;
     -ms-grid-row: 3;
 }
-.cards.seven{
+
+.cards.seven {
     -ms-grid-column: 1;
     -ms-grid-row: 4;
 }
-
-
-
-
 
 .techTools {
     font-size: 1.2em;
@@ -658,11 +664,13 @@ nav {
     background-color: #323641;
     padding: 30px 0px 30px 50px;
 }
+
 .buttonCTA.gitLink {
     display: block;
     width: fit-content;
-    margin-top:30px ;
+    margin-top: 30px;
 }
+
 .projectPageHeader p {
     color: #f2f5f7;
     padding: 20px 0px 40px 0px;
@@ -744,13 +752,15 @@ nav {
 
 #skillSection {
     display: flex;
-    justify-content:space-evenly ;
+    justify-content: space-evenly;
     text-align: center;
 }
-#aboutEmail{
+
+#aboutEmail {
     padding: 10px 0px;
 }
-h3#aboutEmail{
+
+h3#aboutEmail {
     font-size: 1.5em;
     font-weight: 900;
 }
@@ -803,7 +813,6 @@ h3#aboutEmail{
     background-color: #127064;
     color: white;
 }
-
 
 .footerInfo h2 {
     padding: 33px 0px 15px 0px;
@@ -860,7 +869,7 @@ h3#aboutEmail{
     h1 {
         font-size: 70px;
     }
-    .projectImg img{
+    .projectImg img {
         height: auto;
     }
 }
@@ -893,7 +902,7 @@ h3#aboutEmail{
         text-align: center;
     }
     .projectsContainer {
-        -ms-grid-columns: 1fr ;
+        -ms-grid-columns: 1fr;
         -ms-grid-rows: 2fr;
         grid-gap: 2rem;
     }
@@ -904,7 +913,6 @@ h3#aboutEmail{
         padding-bottom: 45px;
         margin: 0px auto;
     }
-   
     .projectImg, .projectImg.two {
         width: 100%;
         text-align: center;
@@ -919,7 +927,6 @@ h3#aboutEmail{
     .projectImg.process {
         margin: 0px auto;
     }
- 
     .projectInfoP {
         width: 100%;
     }
@@ -979,13 +986,12 @@ h3#aboutEmail{
         margin: 10px auto;
     }
     .projectPageHeader {
-padding-left: 10px;       
+        padding-left: 10px;
     }
     .projectImg.process img {
         width: 400px;
         margin: 10px auto;
     }
-
     .buttonCTA {
         font-size: 0.7em;
     }
@@ -1022,14 +1028,13 @@ padding-left: 10px;
     .taskAnalysisTable td, .taskAnalysisTable th {
         padding: 2px;
     }
-    .groupetonGif{
+    .groupetonGif {
         height: 300px;
         width: auto;
     }
 }
 
 @media only screen and (max-width: 442px) {
-
     .projectImg.process img {
         width: 300px;
         margin: 10px auto;
@@ -1059,9 +1064,8 @@ padding-left: 10px;
     #top {
         display: none;
     }
-    .groupetonGif{
+    .groupetonGif {
         height: 300px;
         width: auto;
     }
 }
-  
