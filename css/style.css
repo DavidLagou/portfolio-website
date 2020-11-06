@@ -419,6 +419,7 @@ nav {
     width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
+    height: auto;
 }
 
 .projectImg.solar {
@@ -516,7 +517,15 @@ nav {
     background: url(../img/ysoa_header.jpg)0 0;
     background-size: cover;
 }
-
+.project_imgheader.groupeton_app {
+    background: url(../img/groupeton_app_header.jpg)0 0;
+    background-size: cover;
+}
+.groupetonGif{
+    border: 3px solid #C75151;
+    height: 500px;
+    width: auto;
+}
 #top {
     position: fixed;
     bottom: 20px;
@@ -847,9 +856,12 @@ h3#aboutEmail{
     h1 {
         font-size: 70px;
     }
+    .projectImg img{
+        height: auto;
+    }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 952px) {
     h1 {
         font-size: 48px;
     }
@@ -966,9 +978,10 @@ h3#aboutEmail{
 padding-left: 10px;       
     }
     .projectImg.process img {
-        width: 300px;
+        width: 400px;
         margin: 10px auto;
     }
+
     .buttonCTA {
         font-size: 0.7em;
     }
@@ -1005,6 +1018,18 @@ padding-left: 10px;
     .taskAnalysisTable td, .taskAnalysisTable th {
         padding: 2px;
     }
+    .groupetonGif{
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 442px) {
+
+    .projectImg.process img {
+        width: 300px;
+        margin: 10px auto;
+    }
 }
 
 @media only screen and (max-width: 321px) {
@@ -1029,6 +1054,10 @@ padding-left: 10px;
     }
     #top {
         display: none;
+    }
+    .groupetonGif{
+        height: 300px;
+        width: auto;
     }
 }
   
