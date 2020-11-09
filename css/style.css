@@ -645,7 +645,10 @@ nav {
     -ms-grid-column: 1;
     -ms-grid-row: 4;
 }
-
+.cards.eight {
+    -ms-grid-column: 2;
+    -ms-grid-row: 4;
+}
 .techTools {
     font-size: 1.2em;
     color: #127064;
